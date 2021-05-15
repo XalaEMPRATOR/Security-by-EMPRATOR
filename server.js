@@ -101,12 +101,6 @@ client.on("message", async message => {
 });
 
 ///////
-const { ShardingManager } = require('discord.js');
-const manager = new ShardingManager('server.js', { token: 'ODEwMjE5OTg4Mzc5ODkzNzkw.YCgeKg.TKTD1ADtKlp2sK627xTodT3cvSk' });
-
-manager.on('shardCreate', shard => console.log(`Launched shard ${shard.id}`));
-manager.spawn();
-
 ///////
 
 client.on("message", async message => {
