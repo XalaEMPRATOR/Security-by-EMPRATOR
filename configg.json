@@ -3519,7 +3519,7 @@
   },
   "830883161508544532": {
     "banLimit": 2,
-    "chaDelLimit": 2,
+    "chaDelLimit": "1",
     "roleDelLimit": 2,
     "kickLimits": 2,
     "chaCrLimit": 2,
