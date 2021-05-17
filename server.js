@@ -1119,7 +1119,7 @@ client.on("message", async message => {
   let args = message.content.split(" ");
   let user =
     message.mentions.users.first() || message.guild.members.cache.get(args[1]);
-  if (message.content.startsWith(prefix + "mute")) {
+  if (message.content.startsWith(prefix + ".")) {
     if (!message.guild.member(message.author).hasPermission("MUTE_MEMBERS"))
       return message.channel.send("Please Check Your Permission MUTE_MEBMERS");
     if (!message.guild.member(client.user).hasPermission("MUTE_MEMBERS"))
@@ -1157,7 +1157,7 @@ client.on("message", async message => {
 client.on("message", async message => {
   let args = message.content.split(" ");
   let user = message.mentions.users.first();
-  if (message.content.startsWith(prefix + "unmute")) {
+  if (message.content.startsWith(prefix + ".")) {
     if (!message.guild.member(message.author).hasPermission("MUTE_MEMBERS"))
       return message.channel.send("Please Check Your Permission MUTE_MEBMERS");
     if (!message.guild.member(client.user).hasPermission("MUTE_MEMBERS"))
