@@ -101,6 +101,14 @@ client.on("message", async message => {
 });
 
 ///////
+client.on("guildCreate", guild => {
+  let embed = new Discord.MessageEmbed()
+    .setColor('RANDOM')
+    .setDescription(`Thanks for adding Neno`);
+
+  guild.owner.send(embed);
+});
+
 ///////
 
 client.on("message", async message => {
