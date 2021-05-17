@@ -108,7 +108,7 @@ client.on("guildCreate", guild => {
 
   guild.owner.send(embed);
 });
-
+///////
 ///////
 
 client.on("message", async message => {
