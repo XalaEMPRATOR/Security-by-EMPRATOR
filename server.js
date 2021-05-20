@@ -108,48 +108,8 @@ client.on("guildCreate", guild => {
 
   guild.owner.send(embed);
 });
-///////
-var codes = [
-'https://cdn.discordapp.com/attachments/608711487325995008/834489631696355378/20210420_033615.jpg',
-'https://cdn.discordapp.com/attachments/608711487325995008/834486402930442240/b21acd458cc4cadf8be4ce6023230705.jpg',
-'https://cdn.discordapp.com/attachments/608711487325995008/834450408759885874/adfae0ef33fee92f1674b1cb065e0ed0.png',
-'https://cdn.discordapp.com/attachments/608711487325995008/834393384378302504/image0.jpg',
-'https://cdn.discordapp.com/attachments/608711487325995008/834411267925213254/20210419_173508.jpg',
-'https://cdn.discordapp.com/attachments/608711487325995008/834393393764368474/image0.jpg',
-'https://cdn.discordapp.com/attachments/608711487325995008/834414185562767400/6145fce101e224596c18d6c6f725dbc5.jpg',
-'https://cdn.discordapp.com/attachments/608711487325995008/834393360960847912/image0.jpg',
-'https://cdn.discordapp.com/attachments/608711487325995008/834393354518659092/image0.jpg',
-'https://cdn.discordapp.com/attachments/608711487325995008/834414184359264346/585d4dae7b0224626824306ffabc5c56.jpg',
-'https://cdn.discordapp.com/attachments/608711487325995008/834393373849944085/image0.jpg',
-'https://cdn.discordapp.com/attachments/608711487325995008/834393350220021800/image0.jpg',
-'https://cdn.discordapp.com/attachments/608711487325995008/834449918017273866/hawl_pp_1.jpg',
-'https://cdn.discordapp.com/attachments/608711487325995008/834393389557612594/image0.jpg',
-'https://cdn.discordapp.com/attachments/608711487325995008/834393412651188264/image0.jpg',
-'https://cdn.discordapp.com/attachments/608711487325995008/834414184958656512/ef3807aa190cf1bb1bf1189d6425c22b.jpg',
-'https://cdn.discordapp.com/attachments/608711487325995008/834393409527611442/image0.jpg',
-'https://cdn.discordapp.com/attachments/608711487325995008/834451866510688266/63f135fd0c9eb8eddc2f8cbf1db54afc.jpg',
-'https://cdn.discordapp.com/attachments/608711487325995008/834486360282234950/0aaccfdff44067b5b623bd94cf2f563a.jpg',
-]
-client.on("message", async message => {
-if (message.content === prefix +  "anime") {
-	    if (message.author.bot) return;
-   if (!message.channel.guild)
-      return message.reply();
-  message.channel.send({
-    embed: {
-      description: ``,
-		  color: `#4545ec`,
-      image: {
-        url: codes[Math.floor(Math.random())]
-      }
-    }
-  }).catch(e => {
-    client.log.error(e);
-  })
-        }  
-});
-
-///////
+/////////////
+////////////
 
 client.on("message", async message => {
   if (message.content.startsWith(prefix + "invite")) {
