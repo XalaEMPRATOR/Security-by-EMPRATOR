@@ -5,9 +5,9 @@
   "name": "hello-express",
   "version": "6.0.0",
   "description": "A simple Node app built on Express, instantly up and running.",
-  "main": "server.js",
+  "main": "emprator.js",
   "scripts": {
-    "start": "node server.js"
+    "start": "node emprator.js"
   },
   "dependencies": {
     "express": "^4.17.1",
